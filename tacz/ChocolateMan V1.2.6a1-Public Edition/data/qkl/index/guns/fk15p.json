@@ -1,0 +1,9 @@
+{
+    
+    "name": "qkl.gun.fk15p.name", 
+    "display": "qkl:fk15p_display",
+    "data": "qkl:fk15p_data",  
+    "tooltip": "qkl.gun.fk15p.desc",
+    "type": "pistol",
+    "sort": 204
+}

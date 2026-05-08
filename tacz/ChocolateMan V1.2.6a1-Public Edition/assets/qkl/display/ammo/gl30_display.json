@@ -1,0 +1,23 @@
+
+    {
+        "slot": "qkl:ammo/slot/gl30",
+        
+        "particle": {
+
+      "name": "smoke",
+
+      "delta": [
+        0,
+        0,
+        0
+      ],
+
+      "speed": 0,
+
+      "life_time": 50,
+
+      "count": 5
+    }
+      
+        
+      }

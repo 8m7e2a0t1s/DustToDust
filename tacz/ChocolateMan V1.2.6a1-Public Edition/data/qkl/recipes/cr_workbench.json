@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "tacz:workbench_b",
+    "nbt": {
+      "BlockId": "qkl:cr_workbench"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "SIL",
+    "SIL"
+  ],
+  "key": {
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "I": {
+      "tag": "forge:ingots/copper"
+    },
+    "B": {
+      "tag": "forge:ingots/iron"
+    },
+    "S": {
+      "item": "minecraft:chest"
+    }
+  }
+}

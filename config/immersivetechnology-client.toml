@@ -1,0 +1,25 @@
+
+#Render options
+[render]
+	#This modifies the distance a special multiblock renderer is visible from (Default: 2.5)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	multiblockSpecialRenderDistanceModifier = 2.5
+	#This controls if the animations and special client rendering applies to the Gas Turbine (Default: true)
+	gas_turbine_renderer = true
+	#This controls if the animations and special client rendering applies to the Steam Turbine (Default: true)
+	steam_turbine_renderer = true
+	#Disables most lighting code for certain models that are rendered dynamically (TESR). May improve FPS. Affects various multiblocks.
+	disableFancyTESR = false
+
+#Solar Reflector options
+[solar_reflector]
+	#Disable the dance animation and sound for untaken solar reflectors (Default: false
+	disable_dance = false
+	#Loop the dance animation and sound for untaken solar reflectors (Default: false)
+	loop_dance = false
+
+#Experimental options
+[experimental]
+	#Display trash can OSD as per tick average instead of per second (Default: false)
+	per_tick_trash_cans = false
+

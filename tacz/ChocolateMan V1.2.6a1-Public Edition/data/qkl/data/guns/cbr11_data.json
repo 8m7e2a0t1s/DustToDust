@@ -1,0 +1,107 @@
+{
+    "ammo": "qkl:rb10",
+    "ammo_amount": 5,
+    "can_crawl": true,
+    "can_slide": true,
+    "bolt": "manual_action",
+    "rpm": 200,
+    "bullet": {
+      "life": 1,
+      "bullet_amount": 1,
+      "damage": 30,
+      "tracer_count_interval": 0,
+      "extra_damage": {
+        "armor_ignore": 0.3,
+        "head_shot_multiplier": 1.5,
+        "damage_adjust": [
+          {"distance": 15, "damage": 30},
+          {"distance": 35, "damage": 26},
+          {"distance": 65, "damage": 23},
+          {"distance": 85, "damage": 19},
+          {"distance": 100, "damage": 18},
+          {"distance": "infinite", "damage": 15}
+        ]
+      },
+      "speed": 320,
+      "gravity": 0.025,
+      "knockback": 0,
+      "friction": 0.015,
+      "ignite": false,
+      "pierce": 2
+    },
+    "reload": {
+      "type": "magazine",
+      "feed": {
+        "empty": 2.42,
+        "tactical": 2.42
+      },
+      "cooldown": {
+        "empty": 3.63,
+        "tactical": 3.7
+      }
+    },
+    "script": "qkl:cbr11_gun_logic",
+  "script_param": {
+    "bolt_time": 1,
+    "intro": 1.67,
+    "intro_empty": 1.08,
+    "intro_empty_clip": 0.83,
+    "loop": 0.92,
+    "ending": 1.5,
+    "ending_empty": 1.5,
+    "ending_empty_feed": 0.5,
+    "clip_load": 2.58,
+    "clip_load_feed": 2.58,
+    "loop_feed": 0.6
+  },
+    "draw_time": 0.9,
+    "put_away_time": 1,
+    "aim_time": 0.23,
+    "sprint_time": 0.2,
+    "weight": 4.1,
+    "fire_mode": [
+      "semi"
+    ],
+    "recoil": {
+      "pitch": [
+        {"time": 0, "value": [3.8, 3.8]},
+        {"time": 0.17, "value": [3.5, 3.5]},
+        {"time": 0.33, "value": [-0.225, -0.225]},
+        {"time": 0.7, "value": [0, 0]},
+        {"time": 0.8, "value": [0, 0]}
+      ],
+      "yaw": [
+        {"time": 0, "value": [-0.9, -0.9]},
+        {"time": 0.45, "value": [-0.9, -0.9]},
+        {"time": 0.7, "value": [0, 0]}
+      ]
+    },
+
+    "melee": {
+    "distance": 1.5,
+    "cooldown": 0.7,
+    "default": {
+      "animation_type": "melee_stock",
+      "distance": 0,
+      "range_angle": 15,
+      "cooldown": 0,
+      "damage": 1.5,
+      "knockback": 1,
+      "prep": 0.1
+    }
+  },
+
+  "allow_attachment_types": [
+
+    "muzzle"
+
+  ],
+
+    "inaccuracy": {
+      "stand": 5,
+      "move": 7,
+      "sneak": 3,
+      "lie": 2,
+      "aim": 0.15
+    }
+}

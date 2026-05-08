@@ -1,0 +1,1158 @@
+{
+	autofocus_id: "3FD56221E3C69A6A"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "medieval"
+	group: "38342CC442E6592B"
+	id: "01515EF7851945C5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2455034B13B918D8"]
+			description: ["In TerraFirmaCraft, the first things you can obtain are sticks, twigs, and loose rocks. They can be found in almost every climate, lying scattered on the ground. Right Click or break these to pick them up. In addition to gathering sticks and twigs on the ground, sticks can also be obtained by breaking leaves with your fist."]
+			id: "3FD56221E3C69A6A"
+			subtitle: "@grok how do I play the game?"
+			tasks: [
+				{
+					id: "611B83E7942FAD4F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "rnr:loose_rock_items"
+						}
+					}
+					title: "Any #rnr:loose_rock_items"
+					type: "item"
+				}
+				{
+					id: "47919762EB23EBEF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:firepit_sticks"
+						}
+					}
+					title: "Any #tfc:firepit_sticks"
+					type: "item"
+				}
+			]
+			title: "Getting Started"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FD56221E3C69A6A"]
+			description: [
+				" Once you have a number of rocks and sticks, you are ready to start Knapping. Knapping is a process where two rocks are hit together, to form a particular shape. In order to knap, first hold at least two rocks in your hand, then right click in the air, which will open up the Knapping Interface. In order to knap a particular item, you want to remove squares until you form the desired pattern. The patterns for each stone head can be found in the JEI menu."
+				""
+				"All stone tool heads can be crafted with a stick or twig to assemble them into a tool."
+			]
+			id: "270DA708118B3F22"
+			subtitle: "You're such a tool"
+			tasks: [{
+				id: "78EED52236A869EC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:stone_tools"
+					}
+				}
+				title: "Any #tfc:stone_tools"
+				type: "item"
+			}]
+			title: "Stone Tool Heads"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["270DA708118B3F22"]
+			description: ["Axes can be used to cut down entire trees, logs and leaves included. However, saplings and sticks will only be obtained if leaves were broken individually."]
+			id: "6331C9456A3A8799"
+			subtitle: "Can I axe you a question?"
+			tasks: [{
+				id: "197EB74778071E80"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:axes/stone"
+					}
+				}
+				title: "Any #forge:axes/stone"
+				type: "item"
+			}]
+			title: "Stone Axe"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["270DA708118B3F22"]
+			description: ["Knives can be used to harvest Straw by breaking plants."]
+			id: "6939DC9432CF66FB"
+			subtitle: "What're you going to do? Stab me?"
+			tasks: [{
+				id: "688C67DA41A36928"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:knifes/stone"
+					}
+				}
+				title: "Any #forge:knifes/stone"
+				type: "item"
+			}]
+			title: "Stone Knife"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["270DA708118B3F22"]
+			description: ["Shovels can be used to dig soil type blocks. They can also be used to create Paths by using them on Dirt or Grass."]
+			id: "478E5C049FD96901"
+			subtitle: "Remove dirt with style!"
+			tasks: [{
+				id: "319CD0A54BE286D0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:shovels/stone"
+					}
+				}
+				title: "Any #forge:shovels/stone"
+				type: "item"
+			}]
+			title: "Stone Shovel"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6939DC9432CF66FB"]
+			description: ["The stone knife can be used to harvest Straw by breaking plants."]
+			id: "794629112DA3198B"
+			subtitle: "Good for pillows"
+			tasks: [{
+				id: "4BCC387B2F83F27E"
+				item: "tfc:straw"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6331C9456A3A8799"]
+			description: ["Axes can be used to cut down entire trees, logs and leaves included. However, saplings and sticks will only be obtained if leaves were broken individually."]
+			id: "0746C39E079E1B36"
+			subtitle: "Wood, what were you expecting?"
+			tasks: [{
+				id: "614591AB196E9524"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["478E5C049FD96901"]
+			description: ["Clay is an incredibly useful and balanced material which can be used for pottery. It can prove challenging to locate at first. Clay can be found in patches all over the place, usually marked by the presence of certain Plants. (Athryium Ferns, Canna, Goldenrod, Pampas Grass, Perovskia, and Water Canna.) Clay can also be found in smaller deposits close to water sources, such as rivers, lakes, or ponds."]
+			id: "751E9D895BBC81CD"
+			subtitle: "Who doesn't love clay?"
+			tasks: [{
+				id: "0BBF5771CEAAB1B1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:clay_knapping"
+					}
+				}
+				title: "Any #tfc:clay_knapping"
+				type: "item"
+			}]
+			title: "Clay"
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["270DA708118B3F22"]
+			description: ["A Javelin can be used as a primitive weapon, capable of being thrown at targets, or used as a Piercing weapon."]
+			id: "7FBF695BB8AE091E"
+			subtitle: "Throw a stone"
+			tasks: [{
+				id: "2A7E175B43D93B51"
+				item: {
+					Count: 1
+					id: "tfc:stone/javelin/igneous_intrusive"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["270DA708118B3F22"]
+			description: ["Hoes are useful tools for Farming, but they can also be used to cut down leaves and other plant matter."]
+			id: "20CC445174264C00"
+			subtitle: "Never Waste Your Diamonds on a Hoe!"
+			tasks: [{
+				id: "143C0DDEDA922547"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:hoes/stone"
+					}
+				}
+				title: "Any #forge:hoes/stone"
+				type: "item"
+			}]
+			title: "Stone Hoe"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["270DA708118B3F22"]
+			description: ["Hammers can be used as Crushing weapons, but are more important tools used for Forging."]
+			id: "07CC400FDFEC9957"
+			subtitle: "It's hammer time!"
+			tasks: [{
+				id: "68497C2DF8CF50FF"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:hammers/stone"
+					}
+				}
+				title: "Any #forge:hammers/stone"
+				type: "item"
+			}]
+			title: "Stone Hammer"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3FD56221E3C69A6A"]
+			description: ["Fire is an important technological advancement. In order to create fire, you will need a Firestarter. In order to use, simply hold Right Click down on the ground. After a few moments, smoke, and then fire will be created. It may take a couple tries to light successfully."]
+			id: "1F978FF0139B8FEC"
+			subtitle: "We DID start the fire!"
+			tasks: [{
+				id: "5F686FFD418E4DB6"
+				item: {
+					Count: 1
+					id: "tfc:firestarter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Firestarter"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0746C39E079E1B36"
+				"1F978FF0139B8FEC"
+			]
+			description: ["With a firestarter, it is now possible to make a Firepit. In order to make one, you will need one log, three sticks, and optionally up to five pieces of kindling. Kindling can be items such as paper products, straw, or pinecones, and will increase the chance of successfully creating a firepit by 10 percent per item used. Throw (Q) all the items on the ground, on the same block. Then use the firestarter on the block with the items floating above it."]
+			icon: "tfc:firepit"
+			id: "140BB8508E2EC4A7"
+			subtitle: "Stay warm in the cold!"
+			tasks: [
+				{
+					id: "59CCE8A9C752657C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:firepit_logs"
+						}
+					}
+					title: "Any #tfc:firepit_logs"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "247CC3E5AD9720CA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "minecraft:stick"
+					}
+					type: "item"
+				}
+			]
+			title: "Firepit"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["140BB8508E2EC4A7"]
+			description: [
+				"Using the firepit will now open the firepit screen. On the left are four fuel slots. Logs, Peat, and Stick Bundles can all be used as firepit fuel by placing them in the topmost slot. Fuel will be consumed from the bottommost slot. There is a gauge which displays the current Temperature of the firepit, and on the right, a slot for items to be heated in."
+				""
+				"Many useful items can be made in a firepit by heating them. Sticks can be heated, where they will produce two Torches. Note that torches will eventually burn out, and need to be re-lit by using a Firestarter, or using another Torch on them."
+			]
+			id: "7EF3FC7059A37ED7"
+			subtitle: "Let there be light!"
+			tasks: [{
+				id: "0660E00048F4C407"
+				item: "tfc:torch"
+				type: "item"
+			}]
+			title: "Light"
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"412CC0246CBD6C35"
+				"140BB8508E2EC4A7"
+				"7EF3FC7059A37ED7"
+			]
+			description: ["The fire pit is also a good device for cooking food. All raw meats and doughs can be cooked in a firepit, which will lengthen their shelf life."]
+			id: "4D45D23469BC4311"
+			subtitle: "I'm hungry!"
+			tasks: [{
+				id: "38AE9A2EBC6F9C99"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:foods/cooked_meats"
+					}
+				}
+				title: "Any #tfc:foods/cooked_meats"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7FBF695BB8AE091E"]
+			id: "412CC0246CBD6C35"
+			tasks: [{
+				id: "3D6EB3EFB3974F09"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:foods/raw_meats"
+					}
+				}
+				title: "Any #tfc:foods/raw_meats"
+				type: "item"
+			}]
+			title: "Hunting"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["751E9D895BBC81CD"]
+			description: [
+				"Like with rocks, clay can be knapped to form new items. It requires five clay in your hand to knap. Unlike rocks, if you make a mistake, you can simply close the knapping interface, reshape your clay, and try again."
+				""
+				"The small vessel is one such item. Like all pottery items, it must be fired before it can be used. Firing is a process of heating the item up to a point where the clay will turn into a hard Ceramic material, which requires heating to 1400 °C, or &eYellow White&r."
+				""
+				"[ \"In order to do this in the early game, you will need to use a \", { \"text\": \"Pit Kiln.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"71E73C4F58FAFCEE\" } } ]"
+			]
+			id: "565A36BF9530B684"
+			subtitle: "Kidnap clay, I think"
+			tasks: [{
+				id: "63B8C6E6F4824BD4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_vessel"
+				}
+				type: "item"
+			}]
+			title: "Clay Knapping"
+			x: -1.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"794629112DA3198B"
+				"1F978FF0139B8FEC"
+				"0746C39E079E1B36"
+			]
+			description: [
+				"A pit kiln is an early game method of heating items up. It can be used to fire clay into ceramic, for example. The pit kiln, over the time period of about eight hours, will heat its contents up to 1400 °C, or &eYellow White&r."
+				""
+				"{@pagebreak}"
+				"In order to create a pit kiln:"
+				""
+				"1. Place up to four items down in a 1x1 hole with V."
+				"2. Use eight Straw on the pit kiln, until the items are covered."
+				"3. Use eight Logs on the pit kiln, until full."
+				"4. Light the top of the pit kiln on fire!"
+				""
+				"The pit kiln will then burn for eight hours, slowly heating the items inside up."
+				""
+				"To pick hot things up out of a pit kiln you will need to make Tongs."
+			]
+			icon: "minecraft:campfire"
+			id: "71E73C4F58FAFCEE"
+			subtitle: "Fire!"
+			tasks: [
+				{
+					id: "2B07D31F61C7A94A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:pit_kiln_straw"
+						}
+					}
+					title: "Any #tfc:pit_kiln_straw"
+					type: "item"
+				}
+				{
+					id: "3C62537DFF02F8CA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:pit_kiln_logs"
+						}
+					}
+					title: "Any #tfc:pit_kiln_logs"
+					type: "item"
+				}
+				{
+					id: "4EA5B5173FCFEB29"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfchotornot:tongs/wood"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Pit Kiln"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"565A36BF9530B684"
+				"71E73C4F58FAFCEE"
+			]
+			description: ["The vessel is an early game storage device that can be used later for casting."]
+			id: "054A8C005F62DECE"
+			subtitle: "Vessel"
+			tasks: [{
+				id: "44F41AF0145A5C9D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:fired_vessels"
+					}
+				}
+				title: "Any #tfc:fired_vessels"
+				type: "item"
+			}]
+			title: "Fired Vessel"
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2455034B13B918D8"]
+			description: [
+				"In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar."
+				""
+				"Thirst is the level of water in your body. It depletes at a similar rate to hunger. At high temperatures or levels of high hunger usage, your thirst will deplete faster. Luckily, drinking Fresh Water replenishes thirst. This can be done by clicking Right Click on a water block. Drinking saltwater causes you to lose thirst, and even has a chance of giving you the Thirst effect, which will drain you even more."
+			]
+			id: "2A0D6AA89610C6FE"
+			subtitle: "hamburger cheeseburger big mac whopper"
+			tasks: [{
+				id: "570D941F88A00B0E"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Food and Water"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["054A8C005F62DECE"]
+			description: [
+				"Another useful pottery item is the Jug. It can be used to pick up and drink fluids, such as fresh water."
+				""
+				"In order to use it, simply Right Click the jug on the fluid in the world. Then use the jug in order to drink from it. The jug can hold 100 mB of fluid at a time."
+			]
+			id: "75A89A25E33C7BAF"
+			tasks: [{
+				id: "26A423AF93A9C186"
+				item: "tfc:ceramic/jug"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["054A8C005F62DECE"]
+			description: ["Clay is also necessary for making Molds. Molds can have molten metal poured into them, which will eventually solidify into the shape of a mold. The item and potentially the mold can then be retrieved by using Right Click on the mold."]
+			id: "4C8A713996D806BD"
+			subtitle: "Mold tools"
+			tasks: [{
+				id: "261235AC96442BCA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:fired_molds"
+					}
+				}
+				title: "Any #tfc:fired_molds"
+				type: "item"
+			}]
+			title: "Molds"
+			x: 5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["794629112DA3198B"]
+			description: [
+				"In the early stages of the game, building can be a challenge as many sturdy building blocks require metal tools to obtain. However, there are a few building blocks that can be obtained with just stone tools."
+				""
+				"With just a Stone Knife, you are able to obtain Straw by breaking plant like blocks. This can be used to craft a very simple building material: Thatch. Thatch is a lightweight block that isn't affected by gravity, however players and other entities can pass right through it! It can also be crafted back into Straw if needed."
+			]
+			id: "7F1CF2787B40D5A5"
+			subtitle: "Better than Thatcher"
+			tasks: [{
+				id: "6E8768EC8753ADCF"
+				item: "tfc:thatch"
+				title: "Thatch"
+				type: "item"
+			}]
+			title: "Better than Thatcher"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"751E9D895BBC81CD"
+				"794629112DA3198B"
+			]
+			description: [
+				"Wattle and Daub is a versatile building and decoration block."
+				""
+				"Wattle can be crafted and placed, however it is breakable and allows players and mobs to walk through it. It can be augmented with Daub, to make it solid."
+			]
+			id: "3550611EDFAB08D8"
+			subtitle: "Wattle you'll do?"
+			tasks: [
+				{
+					id: "300704B1FAE490D5"
+					item: "tfc:wattle"
+					type: "item"
+				}
+				{
+					id: "55ED485F6ADE0EA8"
+					item: "tfc:daub"
+					type: "item"
+				}
+			]
+			title: "Wattle and Daub"
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			description: ["The quest book will be a rough guide through the basics of early progression. Documentation can be found elsewhere and will most likely provide a better and more thorough guide."]
+			id: "2455034B13B918D8"
+			subtitle: "Your Guide to the Server"
+			tasks: [{
+				id: "091E2AE877DFCC55"
+				title: "The Quest Book"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3FD56221E3C69A6A"]
+			description: [
+				"In addition to sticks, twigs, and stones on the ground, in your travels you may encounter small pieces of ores scattered around the ground. These are important, as they are one of the only sources of ore and metal before obtaining a pickaxe."
+				""
+				"These small ore pieces can serve two purposes: they can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere nearby, probably underground and close to the surface. Be sure to note where you find small ores, as the location of ore veins will be useful later during Prospecting."
+			]
+			id: "27DAD2D6E0918FCD"
+			subtitle: "Ore you impressed?"
+			tasks: [{
+				id: "385AE016AC558671"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ore/small_native_copper"
+				}
+				type: "item"
+			}]
+			title: "Early Ores"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51954140375A78E0"]
+			description: ["With a tool head in hand, you are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voila!"]
+			id: "2FA4F33E8A962A30"
+			tasks: [{
+				id: "3D90D17B857B0009"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/pickaxe/copper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"27DAD2D6E0918FCD"
+				"054A8C005F62DECE"
+				"4C8A713996D806BD"
+			]
+			description: [
+				"In TerraFirmaCraft, ores each contain a certain number of units, or mB (millibuckets) of actual metal which can be extracted. Small ores like this found on the surface are the lowest quality, and only provide 10 mB of metal. In order to extract this metal, it needs to be melted, and made into tools using a process called casting."
+				""
+				"{@pagebreak}"
+				""
+				"You will need:"
+				""
+				"A Small Vessel"
+				"Enough materials for a Pit Kiln."
+				"One or more Mold(s) to cast the molten metal."
+				"And finally, at least 100 mB total of a metal which is suitable for casting: Copper, in one or more of its three ore forms."
+				""
+				"{@pagebreak}"
+				"First, open the Small Vessel and put the ores inside. Count up the total amount of metal in the ores carefully! Then, you need to build a Pit Kiln with the filled small vessel inside. As the vessel heats, the ores inside it will melt, and you'll be left with a vessel of molten metal."
+				""
+				"Take the vessel out and Right Click it, to open the Casting interface."
+				""
+				"With the casting interface open, place your empty fired mold in the center slot. It will fill up as long as the vessel remains liquid. (If the vessel solidifies, it can be reheated in another pit kiln.) Once the mold is full, it can be removed and left to cool. Once cool, the mold and its contents can be extracted by using the mold, or putting it in the crafting grid."
+			]
+			id: "51954140375A78E0"
+			subtitle: "Cast Tools"
+			tasks: [
+				{
+					id: "76117A933CA2CE69"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/pickaxe_head_mold"
+					}
+					type: "item"
+				}
+				{
+					id: "158B9D559859CF2E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/pickaxe_head/copper"
+					}
+					type: "item"
+				}
+			]
+			title: "Casting"
+			x: 3.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["7FBF695BB8AE091E"]
+			description: ["To get started you will first need to obtain Raw Hide, which is dropped when slaughtering many different Animals. Different animals will drop different sizes of Raw Hide."]
+			id: "6484F5C6BB4C53D1"
+			tasks: [{
+				id: "626F16657FF483E3"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:raw_hides"
+					}
+				}
+				title: "Any #tfc:raw_hides"
+				type: "item"
+			}]
+			title: "Leather Making"
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["51954140375A78E0"]
+			id: "0169EB348CBC7C1F"
+			tasks: [{
+				id: "6298495F50A5CD33"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:saws"
+					}
+				}
+				title: "Any #tfc:saws"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"4D45D23469BC4311"
+				"054A8C005F62DECE"
+			]
+			description: [
+				"In TerraFirmaCraft, no food will last forever! Food will expire over time, turning rotten. Rotten food will not restore any hunger, and has the potential to give you unhelpful effects such as Hunger or Poison."
+				""
+				"One of the easiest ways to preserve food is to use a Large Vessel. Large Vessels are a block which can store up to nine items, and when sealed the items inside will gain the Preserved status, which extends their remaining lifetime by 2x."
+			]
+			id: "29A403FD9F5D5D09"
+			subtitle: "Preserve your food!"
+			tasks: [{
+				id: "7BFFB5EB9AC4D464"
+				item: "tfc:ceramic/large_vessel"
+				type: "item"
+			}]
+			title: "Preservation"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6AB920F2ED0602B6"
+				"6484F5C6BB4C53D1"
+				"55FC5FE03121DB88"
+			]
+			description: ["By sealing raw hide in a barrel with Limewater, you can obtain Soaked Hide."]
+			id: "2154BC28B05FA110"
+			tasks: [{
+				id: "7D043DA20A30BDFA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:soaked_hides"
+					}
+				}
+				title: "Any #tfc:soaked_hides"
+				type: "item"
+			}]
+			title: "Soaked Hide"
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0169EB348CBC7C1F"]
+			id: "04AA56478503B3AF"
+			tasks: [{
+				id: "6272C0921A65F41B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:lumber"
+					}
+				}
+				title: "Any #tfc:lumber"
+				type: "item"
+			}]
+			title: "Lumber"
+			x: 7.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["04AA56478503B3AF"]
+			id: "35E35E37E0422E35"
+			tasks: [{
+				id: "747D668A43763B2A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "alekiships:crafting_tables"
+					}
+				}
+				title: "Any #alekiships:crafting_tables"
+				type: "item"
+			}]
+			title: "Crafting Table"
+			x: 9.0d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"04AA56478503B3AF"
+				"35E35E37E0422E35"
+			]
+			description: [
+				"The Barrel is a device that can hold both items and fluids. The central slot is used to hold items. Fluids are shown in the tank on the left side, and can be added to the barrel by placing a filled bucket or jug in the top left slot. They can be removed by placing an empty fluid container in the same slot. Using Right Click on the block with a bucket also works."
+				""
+				"Barrels can be Sealed. Sealing allows the barrel to be broken while keeping its contents stored. It also allows for the execution of some recipes. In the interface, sealing can be toggled with the grey button on the right side. Using Right Click on the barrel with an empty hand while holding Shift also toggles the seal."
+			]
+			id: "55FC5FE03121DB88"
+			tasks: [{
+				id: "078529A91A3A94BA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:barrels"
+					}
+				}
+				title: "Any #tfc:barrels"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -9.5d
+		}
+		{
+			description: [
+				"Flux is a powder which is required for Welding and also used as a catalyst in a Blast Furnace. Flux can be obtained by grinding specific items in a Quern."
+				""
+				"Flux can be obtained in a number of ways, one of which is from its native ore, Borax."
+				""
+				"Some rocks - Limestone, Dolomite, Chalk, or Marble - can also be used as flux, after being ground in a Quern. Other items, including Scutes, Clams, Mollusks, and the edible remains of Shellfish can also be used to create flux."
+			]
+			id: "6AB920F2ED0602B6"
+			tasks: [{
+				id: "15576BEFF9E2A9AB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:powder/flux"
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2154BC28B05FA110"]
+			description: [
+				"After soaking, Soaked Hides must be scraped which removes any excess material. In order to scrape hides, place the hide on the side of a Log. With a Knife, Right Click on each part of the hide and it will start to change texture."
+				""
+				"Once the hide is fully scraped, it can be broken to pick up a Scraped Hide."
+			]
+			id: "019611B0F7933E6B"
+			tasks: [{
+				id: "0B1F66320461F863"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:scraped_hides"
+					}
+				}
+				title: "Any #tfc:scraped_hides"
+				type: "item"
+			}]
+			title: "Scraped Hide"
+			x: 11.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["019611B0F7933E6B"]
+			description: ["Prepared hide can be created by sealing a scraped hide and water in a barrel."]
+			id: "571B35EDAEB11A8B"
+			tasks: [{
+				id: "46455214FF1AD59F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:prepared_hides"
+					}
+				}
+				title: "Any #tfc:prepared_hides"
+				type: "item"
+			}]
+			title: "Prepared Hide"
+			x: 13.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"24425CFF1261ED50"
+				"571B35EDAEB11A8B"
+			]
+			id: "656DE0626BD91E80"
+			tasks: [{
+				id: "3AF1EB3F9A5370E5"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -6.0d
+		}
+		{
+			description: ["To create leather you will need to create Tannin. Tannin is made by sealing water and certain types of wood (Oak, Birch, Chestnut, Douglas Fir, Hickory, and Maple) in a barrel."]
+			id: "24425CFF1261ED50"
+			tasks: [{
+				id: "2DE6D80057757AA4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:makes_tannin"
+					}
+				}
+				title: "Any #tfc:makes_tannin"
+				type: "item"
+			}]
+			title: "Tannin"
+			x: 15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["412CC0246CBD6C35"]
+			description: ["Salting is a way to make meat last longer. To salt meat, it must be crafted with Salt in a crafting grid. Only raw meat can be salted. Afterwards, cooking or otherwise preserving the meat does not take away the salted property."]
+			id: "2CCABD1D759EB7D6"
+			subtitle: "Someone's salty..."
+			tasks: [{
+				id: "0C1D3A9423B6754F"
+				item: "tfc:powder/salt"
+				type: "item"
+			}]
+			title: "Salting"
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2FA4F33E8A962A30"
+				"07CC400FDFEC9957"
+			]
+			description: [
+				"An alternative to casting tools directly in the early game, and a requirement for higher tier metals, is to use an Anvil. An anvil is a block which can be used for two different processes: Working and Welding."
+				""
+				"{@pagebreak}"
+				"First, you need to acquire a block of Raw Rock, that is Igneous Extrusive (Rhyolite, Basalt, Andesite, or Dacite) or Igneous Intrusive (Granite, Diorite, or Gabbro). You could find and use an exposed block in the world, or you could extract one from the surrounding rock."
+				""
+				"In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be extracted. You must mine the blocks on all six sides of a raw rock block - once it is surrounded by air on all sides - it will pop off as a item which can be picked up."
+				""
+				"{@pagebreak}"
+				"In order to make the anvil, simply right click the exposed top face of one of those raw rock blocks with your hammer, and voila! An anvil will be formed."
+				""
+				"Anvils have tiers and the rock anvil is Tier 0 - the lowest tier. It is only able to Weld Tier I ingots."
+				""
+				""
+				"{@pagebreak}"
+				"In order to work an item on the anvil, you will need to use the anvil to open up the anvil interface, seen below. On the left, there are two input slots for items - for working, the target item must be in the right hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil or in your main hand. The hammer will gradually take damage as you work the item."
+				""
+				""
+				"{image:tfc:textures/gui/book/gui/anvil_empty.png width:100 height:100 align:center}"
+			]
+			id: "3F5C75EDC0AF1F64"
+			tasks: [{
+				id: "3710CBF581AF3AE9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:rock/raw"
+					}
+				}
+				title: "Any #tfc:rock/raw"
+				type: "item"
+			}]
+			title: "Primitive Anvil"
+			x: -3.0d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"4DD311059ED9736D"
+				"6AB920F2ED0602B6"
+			]
+			description: [
+				"Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a Stone Anvil or a metal anvil."
+				""
+				"First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots."
+				""
+				"You also need to have at least one Flux in the anvil to aid the welding process. Then, while both items are hot enough to weld - the tooltip will say \"Can Weld\" - you press the \"Weld\" button on the right side of the GUI. You will hear a hammering sound and the items will be welded together."
+			]
+			id: "2CC7DB81ADCF0F47"
+			tasks: [{
+				id: "2EDE64E6838471A2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/double_ingot/copper"
+				}
+				type: "item"
+			}]
+			title: "Welding"
+			x: 11.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["2CC7DB81ADCF0F47"]
+			id: "785C7619DA860E54"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "61130BB5B38BD725"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/copper"
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["164E55E7C8C64782"]
+			description: [
+				"The forge is used to heat materials to high temperatures. The time it takes to heat up items is substantially faster than the Pit Kiln, and easier to handle as well."
+				""
+				"To make a forge, youll need 7 charcoal, and 5 rock-like blocks. Cobblestone, raw stone, and bricks will work."
+				""
+				"A guide on how to specifically create the forge can be found in the Terrafirmacraft guidebook."
+			]
+			id: "4DD311059ED9736D"
+			tasks: [{
+				icon: "minecraft:coal_block"
+				id: "31AB1CD99D89C937"
+				observe_type: 0
+				timer: 0L
+				title: "Look at Charcoal Forge"
+				to_observe: "tfc:charcoal_forge"
+				type: "observation"
+			}]
+			title: "Forge"
+			x: 3.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["3F5C75EDC0AF1F64"]
+			description: [
+				"The Charcoal Pit is a way of obtaining Charcoal. Charcoal pits are made with Log Piles. To place a log pile, Right Click and Shift while holding a Log. More logs can be inserted by either pressing Right Click directly while holding a log, or by pressing Right Click with something else to open the interface."
+				""
+				"The charcoal pit is formed by surrounding log piles with solid, non-flammable blocks. The amount of charcoal produced is proportional to the amount of logs contained inside the log piles. To start the burning process, light one of the log piles, and then cover it. If it worked, you should see smoke particles rise up from the structure."
+				""
+				"After the charcoal pit burns out and stops smoking, you will be left with Charcoal piles. The charcoal pile contains up to 8 layers of Charcoal. Dig it with a shovel to obtain the charcoal items. Charcoal piles can be added to or placed with Right Click."
+			]
+			id: "164E55E7C8C64782"
+			tasks: [{
+				id: "7EA292229B03519F"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			title: "Charcoal Pit"
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"656DE0626BD91E80"
+				"4DD311059ED9736D"
+			]
+			description: ["A Bellows is a device which can be used to increase the air flow through another device which lets them burn at a hotter temperature. However, by burning at a hotter temperature they will also consume fuel faster. The bellows can provide air to a device that is directly in front of it, or in front and one block down. This allows it to provide air to a Firepit, or a Charcoal Forge for example."]
+			id: "02D0C6AD820F70EB"
+			tasks: [{
+				id: "0900F730449FC03F"
+				item: "tfc:bellows"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["656DE0626BD91E80"]
+			description: ["A leather flask is a direct upgrade from the Jug as it holds much more water in it."]
+			id: "6354E626206D2B10"
+			tasks: [{
+				id: "7DB6D900AA8ACCE3"
+				item: {
+					Count: 1
+					id: "waterflasks:leather_flask"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 17.0d
+			y: -6.0d
+		}
+	]
+	title: "Prehistory"
+}

@@ -1,0 +1,68 @@
+{
+  "model": "qkl:gun/waltertl_geo",
+  "texture": "qkl:gun/uv/waltertl",
+  "lod": {
+    "model": "qkl:gun/lod/waltertl",
+    "texture": "qkl:gun/lod/waltertl"
+  },
+  "hud": "qkl:gun/hud/waltertl",
+  "slot": "qkl:gun/slot/waltertl",
+  // 弹药计量样式，可选值：”normal“(显示实际值)、”percent“(显示百分比)，默认为”normal“
+  "ammo_count_style": "normal",
+  // tooltip的伤害显示样式，可选值：”total“(总伤害)、”per_projectile“(单发弹丸伤害x弹丸数量)，默认为”per_projectile“
+  "damage_style": "per_projectile",
+  "animation": "qkl:waltertl",
+  "state_machine": "tacz:m1014_state_machine",
+  "state_machine_param": {
+    "bolt_shell_ejecting_time": 0.17,
+    "intro_shell_ejecting_time": 0.4
+  },
+  "use_default_animation": "rifle",
+  "third_person_animation": "default",
+  "player_animator_3rd": "tacz:rifle_default.player_animation",
+  "show_crosshair": false,
+  "transform": {
+    "scale": {
+      "thirdperson": [0.5, 0.5, 0.5],
+      "ground": [0.5, 0.5, 0.5],
+      "fixed": [0.9, 0.9, 0.9]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "qkl:flash/qkl_flash",
+    "scale": 3
+  },
+  "iron_zoom": 1.5,
+  "zoom_model_fov": 50,
+  
+  "sounds": {
+    "shoot": "qkl:waltertl/waltertl_shoot",
+    "shoot_3p": "qkl:waltertl/waltertl_shoot_3p",
+    "draw": "qkl:cbr11/cbr11_draw",
+    "put_away": "qkl:cbr11/cbr11_put_away",
+    "inspect_empty": "qkl:cbr11/cbr11_inspect_empty",
+    "head_hit": "qkl:qkl_head_hit",
+    "flesh_hit": "qkl:qkl_flesh_hit",
+    "kill": "qkl:qkl_kill"
+  },
+  // 副手枪械显示
+  "offhand_show": {
+    "pos": [1, 20, 3.5],
+    "rotate": [0, 0, 60],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [-1, 20, 3],
+      "rotate": [-180, 0, 120],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  },
+  "controllable": {
+    "semi": {
+      "low_frequency": 0.25,
+      "high_frequency": 0.5,
+      "time": 100
+    }
+  }
+}

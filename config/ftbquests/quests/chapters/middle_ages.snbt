@@ -1,0 +1,305 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "middle_ages"
+	group: "38342CC442E6592B"
+	id: "57EBB5E7385CF810"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["785C7619DA860E54"]
+			id: "181074F69DB24C6A"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "4023894CD111AF93"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/copper"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["181074F69DB24C6A"]
+			description: [
+				"Alloys can be made during the early game is through the usage of a Small Vessel. The process is very similar to Casting. However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix."
+				""
+				"Bronze requires a ratio of 88-92% Copper and 8-12% Tin. For example, to create 1000 mB of Bronze, you would need between 880 and 920 mB of Copper, and between 80 and 120 mB of Tin."
+			]
+			id: "1396D94A0AB8EADF"
+			tasks: [{
+				id: "1FC8EC79B5D711E4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+				title: "Any #forge:ingots/bronze"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1396D94A0AB8EADF"]
+			description: ["Obtain 14 ingots of Bronze, then weld them in the Copper Anvil."]
+			id: "6B9E3EDD0B0CBA96"
+			tasks: [{
+				id: "3F80E502C0705DAB"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:double_ingots/bronze"
+					}
+				}
+				title: "Any #forge:double_ingots/bronze"
+				type: "item"
+			}]
+			title: "Welding Bronze"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6B9E3EDD0B0CBA96"]
+			description: ["To work metal, you'll need to use a anvil of the same tier or higher."]
+			id: "6A5375DB7859ED5A"
+			tasks: [{
+				id: "67D7EAC00DBBC338"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:bronze_anvils"
+					}
+				}
+				title: "Any #tfc:bronze_anvils"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6A5375DB7859ED5A"]
+			description: [
+				"The Bloomery is a device used to smelt Iron Ore into Iron Blooms which can be worked into Wrought Iron."
+				""
+				"The iron ores are Hematite, Limonite, and Magnetite."
+				""
+				"A guide to setting up the Bloomery Multiblock can be found within the Terrafirmacraft guide."
+			]
+			id: "5B810ECA7E3652CA"
+			tasks: [
+				{
+					id: "2BF5BFC60E27A5A0"
+					item: "tfc:bloomery"
+					type: "item"
+				}
+				{
+					id: "18C7D4D72ABC09E8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:raw_iron_bloom"
+					}
+					type: "item"
+				}
+				{
+					id: "381DB4C9EF936AF7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/wrought_iron"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5B810ECA7E3652CA"]
+			description: ["Wrought iron  is the next tier of metal. It has much more durability than bronze or copper, but thats about it. "]
+			id: "421FD318C2E22A57"
+			tasks: [{
+				id: "130767C75960BBDF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/wrought_iron"
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			description: ["Graphite is a Mineral which is used in the construction of Fire Clay. It can be found in Gneiss, Marble, Quartzite, and Schist rocks, in elevations below y=60 and above y=-30."]
+			id: "3D2BA49558353720"
+			tasks: [{
+				id: "4954E39066D07EC0"
+				item: "tfc:powder/graphite"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -8.5d
+		}
+		{
+			description: [
+				"Kaolinite is a soft Mineral which is used in the construction of Fire Clay. It can be found spawning at high altitudes in Plateaus, Old Mountains, and Highlands, at a temperature of at least 18°C, with a rainfall of at least 300mm. The Blood Lily flower grows on Kaolin clay."
+				""
+				"Aluminum Powder can be used as a substitute for Kaolinite Powder."
+			]
+			id: "080712EED809059D"
+			tasks: [{
+				id: "14A1060323EEB9FC"
+				item: "tfc:powder/kaolinite"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"421FD318C2E22A57"
+				"080712EED809059D"
+				"3D2BA49558353720"
+			]
+			dependency_requirement: "one_completed"
+			id: "0E35BE8A2A79BEA6"
+			tasks: [{
+				id: "3104DC4E2E1119D9"
+				item: "tfc:fire_clay"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0E35BE8A2A79BEA6"]
+			description: ["A Crucible is an advanced device used for the creation of Alloys. It is a more precise method than using a Small Vessel to make alloys."]
+			id: "6A3CCAF68BB37DEC"
+			tasks: [{
+				id: "7976919480922E82"
+				item: "tfc:crucible"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6A3CCAF68BB37DEC"]
+			description: [
+				"A Blast Furnace is an advanced device which is used in the creation of Steel. By mixing Iron Ores, Charcoal, and Flux in a controlled, hot environment, you can create a stronger metal than cast or wrought iron."
+				""
+				"More information can be found in the TFC Guide."
+			]
+			id: "78BDA86F74F50D77"
+			tasks: [
+				{
+					id: "689C535E19C08C86"
+					item: "tfc:blast_furnace"
+					type: "item"
+				}
+				{
+					id: "6EA3D40733FC4842"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:tuyeres"
+						}
+					}
+					title: "Any #tfc:tuyeres"
+					type: "item"
+				}
+				{
+					id: "07A2EC5E8E6C9FD9"
+					item: "tfc:bellows"
+					type: "item"
+				}
+				{
+					id: "3ADE9610AC6C7EEE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/pig_iron"
+					}
+					type: "item"
+				}
+				{
+					id: "09B7B8B12C55DCC0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/steel"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5B810ECA7E3652CA"]
+			description: ["Steel is a significant upgrade to bronze or iron and is a smart investment tools/armor wise continuing forward."]
+			id: "7BA25522C627C01F"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "404E78BEA445FA5F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/steel"
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -6.5d
+		}
+	]
+	title: "Ancient History"
+}

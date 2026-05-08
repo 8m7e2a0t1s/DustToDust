@@ -1,0 +1,179 @@
+{
+  "name": {
+    "text": "Gun Bench"
+  },
+  "appearance": {
+    "custommachinery:block": "d2d:machine/gunbench",
+    "custommachinery:item": "d2d:machine/gunbench",
+    "custommachinery:shape": {
+      "north": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "south": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          1.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "west": [
+        [
+          0.0,
+          0.0,
+          -1.0,
+          1.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "east": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          2.0,
+          2.0
+        ]
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "custommachinery:item",
+      "capacity": 1,
+      "id": "barrel"
+    },
+    {
+      "type": "custommachinery:item",
+      "capacity": 1,
+      "id": "mechanics"
+    },
+    {
+      "type": "custommachinery:item",
+      "capacity": 1,
+      "id": "misc1"
+    },
+    {
+      "type": "custommachinery:item",
+      "capacity": 1,
+      "id": "misc2"
+    },
+    {
+      "type": "custommachinery:item",
+      "capacity": 1,
+      "id": "stock"
+    },
+    {
+      "type": "custommachinery:item",
+      "capacity": 1,
+      "max_input": 0,
+      "id": "output",
+      "mode": "output"
+    }
+  ],
+  "gui": [
+    {
+      "type": "custommachinery:background",
+      "texture": "d2d:textures/gui/ui.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "mechanics",
+      "priority": 1,
+      "x": 99,
+      "y": 72,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "stock",
+      "priority": 1,
+      "x": 72,
+      "y": 72,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "barrel",
+      "priority": 1,
+      "x": 126,
+      "y": 72,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "misc1",
+      "priority": 1,
+      "x": 19,
+      "y": 58,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "misc2",
+      "priority": 1,
+      "x": 19,
+      "y": 80,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "output",
+      "x": 190,
+      "y": 60,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:player_inventory",
+      "priority": -5,
+      "x": 48,
+      "y": 140
+    }
+  ],
+  "processor": {
+    "type": "custommachinery:craft"
+  }
+}

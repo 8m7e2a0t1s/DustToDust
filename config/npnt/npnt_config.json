@@ -1,0 +1,33 @@
+/*
+==============================================
+|           NPNT - Configuration             |
+|           Author: Admany                   |
+==============================================
+|  This config file auto-updates itself.     |
+|  You do NOT need to delete it on updates.  |
+==============================================
+*/
+
+{
+  "_comment": "Edit this file to configure NPNT.",
+
+  // === General ===
+  // Default name tag mode (visual or hide_all)
+  "defaultMode": "visual",
+  // If true, NPNT will submit tasks to Quantified API when possible
+  "useQuantifiedTaskHandler": true,
+  // Required permission level for /npnt commands (default 2)
+  "commandPermissionLevel": 2,
+
+  // === Raytrace ===
+  // Max raytrace iterations when ignoring see-through blocks
+  "raytraceMaxSteps": 96,
+  // Raytrace step epsilon when skipping see-through blocks
+  "raytraceEpsilon": 0.01,
+  // Max distance to evaluate visibility (blocks)
+  "raytraceMaxDistance": 128,
+  // Client visibility cache refresh interval in ticks
+  "visibilityUpdateIntervalTicks": 1,
+  // Default server/world distance limit for name tag visibility (blocks)
+  "defaultDistanceLimit": 128
+}

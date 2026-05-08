@@ -1,0 +1,78 @@
+{
+    "model": "qkl:gun/1860_geo",
+    "texture": "qkl:gun/uv/1860",
+    "slot": "qkl:gun/slot/1860",
+    "hud": "qkl:gun/hud/1860",
+    "animation": "qkl:1860",
+    "use_default_animation": "rifle",
+
+    "state_machine": "qkl:m1860_state_machine",
+
+    "sounds": {
+        "shoot": "qkl:1860/1860_shoot",
+        "shoot_3p": "qkl:1860/1860_shoot_3p",
+        "draw": "qkl:cbr11/cbr11_draw",
+        "put_away": "qkl:cbr11/cbr11_put_away",
+        "bolt": "qkl:1860/1860_bolt",
+        "inspect_empty": "qkl:1860/1860_inspect_empty",
+        "inspect": "qkl:1860/1860_inspect",
+        "head_hit": "qkl:qkl_head_hit",
+        "flesh_hit": "qkl:qkl_flesh_hit",
+        "kill": "qkl:qkl_kill"
+       
+    
+    },
+       
+    "muzzle_flash": {
+       
+        "texture": "qkl:flash/qkl_flash",
+        
+        "scale": 2.5
+      },
+
+    "iron_zoom": 1.5,
+    "zoom_model_fov": 45,
+
+        "text_show": {
+           
+            "ammo_count_text_pos": {
+             
+              "scale": 0.35,
+            
+              "align": "right",
+              
+              "shadow": false,
+            
+              "color": "#53f9af",
+            
+              "light": 15,
+             
+              "text": "%cbr11%"
+            }
+            
+          },
+
+    "transform": {
+        "scale": {
+           
+            "thirdperson": [
+                0.5,
+                0.5,
+                0.5
+            ],
+           
+            "ground": [
+                0.5,
+                0.5,
+                0.5
+            ],
+           
+            "fixed": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        }
+    },
+    "third_person_animation": "default"
+}

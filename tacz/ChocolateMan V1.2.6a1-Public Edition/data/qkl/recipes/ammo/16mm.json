@@ -1,0 +1,28 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "item": "minecraft:paper"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "qkl:16mm",
+    "count": 16
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}
