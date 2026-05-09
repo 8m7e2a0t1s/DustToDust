@@ -70,5 +70,5 @@ event.remove({ output: 'immersiveengineering:empty_shell' }),
 event.remove({ output: 'immersiveengineering:empty_casing' }),
 event.remove({ output: 'shoppy:shop_block'}),
 event.remove({ output: 'shoppy:bartering_station'})
-
+event.remove({output: 'immersiveengineering:nugget_lead'})
 })

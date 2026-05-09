@@ -293,6 +293,7 @@ event.shaped(
   }
 ), 
 event.recipes.tfc.quern('minecraft:green_dye', 'minecraft:cactus'),
+event.recipes.tfc.quern('4x dfc:metal/powder/lead', 'tfc_metallurgy:metal/ingot/lead'),
 event.shaped(
   Item.of('shoppy:bartering_station', 1),
   [
@@ -308,11 +309,56 @@ event.shaped(
     E: '#minecraft:logs',
     F: '#forge:stone_bricks'
   }
+),
+event.shaped(
+  Item.of(Item.of('custommachinery:custom_machine_item', '{machine:"custommachinery:gunbench"}')),
+  [
+    '   ',
+    'ABC',
+    'D E'
+  ],
+  {
+    A: 'tfc:metal/ingot/red_steel',
+    B: 'immersiveengineering:hammer',
+    C: 'immersiveengineering:wirecutter',
+    D: 'immersiveengineering:craftingtable',
+    E: 'immersiveengineering:treated_fence'
+  }
+),
+event.shapeless(
+  Item.of('immersiveengineering:nugget_lead', 9),
+  ['tfc_metallurgy:metal/ingot/lead']
 )
-
 })
 ServerEvents.tags('item', event => {
 event.add('tfc:blast_furnace_fuel', 'immersiveengineering:coal_coke')
 	
 
+})
+ServerEvents.recipes(event => {
+  event.recipes.custommachinery.custom_machine("custommachinery:gunbench", 100)
+    .requireItem('immersiveengineering:wooden_grip', "stock")
+    .requireItem(Item.of('minecraft:flint_and_steel'), "mechanics")
+    .requireItem(Item.of('tfc:metal/tuyere/steel'), "barrel")
+    .produceItem(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"qkl:fk15p",HasBulletInBarrel:1b}'), "output")
+    
+  event.recipes.custommachinery.custom_machine("custommachinery:gunbench", 100)
+  .requireItem('tfc:unrefined_paper', "stock")
+  .requireItem('minecraft:gunpowder', "mechanics")
+  .requireItem('immersiveengineering:nugget_lead', "barrel")
+  .produceItem(Item.of('tacz:ammo', '{AmmoId:"qkl:16mm"}'), "output")
+  
+  event.recipes.custommachinery.custom_machine("custommachinery:gunbench", 100)
+  .requireItem('tfc_items:blue_steel_ring', "stock")
+  .requireItem('tfc:metal/rod/blue_steel', "mechanics")
+  .requireItem('tfc:metal/sword_blade/blue_steel', "barrel")
+  .produceItem(Item.of('tacz:attachment', '{AttachmentId:"qkl:bayonet_fkc1"}'), "output")
+
+  event.recipes.custommachinery.custom_machine("custommachinery:gunbench", 100)
+  .requireItem('tfc_items:brass_stamen', "misc1")
+  .requireItemTag('#minecraft:logs', 1, "misc2")
+  .requireItem('immersiveengineering:wooden_grip', "stock")
+  .requireItem(Item.of('minecraft:flint_and_steel'), "mechanics")
+  .requireItem(Item.of('tfc:metal/tuyere/blue_steel'), "barrel")
+  .produceItem(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"qkl:fk15",HasBulletInBarrel:1b}'), "output")
 })
