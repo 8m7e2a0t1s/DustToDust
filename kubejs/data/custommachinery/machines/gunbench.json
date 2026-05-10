@@ -172,8 +172,5 @@
       "x": 48,
       "y": 140
     }
-  ],
-  "processor": {
-    "type": "custommachinery:craft"
-  }
+  ]
 }

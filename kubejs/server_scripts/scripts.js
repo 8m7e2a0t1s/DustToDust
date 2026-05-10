@@ -325,11 +325,106 @@ event.shaped(
     E: 'immersiveengineering:treated_fence'
   }
 ),
+event.shaped(
+  Item.of(Item.of('immersiveengineering:blueprint', '{blueprint:"Flintlock Parts"}')),
+  [
+    'ABA',
+    'CCC',
+    'DDD'
+  ],
+  {
+    A: 'tfc:metal/sheet/steel',
+    B: 'tfc_items:steel_gear',
+    C: 'minecraft:blue_dye',
+    D: 'minecraft:paper'
+  }
+),
+event.shaped(
+  Item.of(Item.of('immersiveengineering:blueprint', '{blueprint:"Musket Parts"}')),
+  [
+    'ABA',
+    'CCC',
+    'DDD'
+  ],
+  {
+    A: 'tfc:metal/sheet/black_steel',
+    B: 'tfc_items:black_steel_gear',
+    C: 'minecraft:blue_dye',
+    D: 'minecraft:paper'
+  }
+),
 event.shapeless(
   Item.of('immersiveengineering:nugget_lead', 9),
   ['tfc_metallurgy:metal/ingot/lead']
+),
+event.recipes.immersiveengineering.blueprint('kubejs:flintlock_barrel', 
+  [
+    'tfc:metal/sheet/steel', 
+    Item.of('tfc:metal/tuyere/steel'), 
+    Item.of('immersiveengineering:hammer')
+  ], 
+  "Flintlock Parts"
+),
+event.recipes.immersiveengineering.blueprint('kubejs:flintlock_mech',
+  [
+    'tfc_items:leather_strip',
+    'tfc:metal/ingot/steel',
+    'tfc_items:handful_steel_rivets',
+    'immersiveengineering:component_steel',
+    'minecraft:flint',
+    Item.of('immersiveengineering:hammer')
+
+  ],
+  "Flintlock Parts"
+),
+event.recipes.immersiveengineering.blueprint('kubejs:flintlock_stock',
+  [
+    'immersiveengineering:wooden_grip',
+    '#forge:plates/steel',
+    '2x tfc_items:steel_rivet',
+    Item.of('immersiveengineering:hammer')
+  ],
+  "Flintlock Parts"
+),
+event.recipes.immersiveengineering.blueprint('kubejs:musket_barrel',
+  [
+    Item.of('immersiveengineering:hammer'),
+    '2x tfc:metal/rod/black_steel',
+    Item.of('tfc:metal/tuyere/black_steel'),
+    Item.of('tfc:metal/tuyere/black_steel'),
+    'tfc_ie_addon:treated_wood_lumber'
+  ],
+  "Musket Parts"
+),
+event.recipes.immersiveengineering.blueprint('kubejs:musket_mech',
+  [
+    Item.of('immersiveengineering:hammer'),
+    'tfc_items:handful_black_steel_rivets',
+    'tfc:metal/sheet/black_steel',
+    'immersiveengineering:wooden_grip',
+    'kubejs:flintlock_mech'
+  ],
+  "Musket Parts"
+),
+event.recipes.immersiveengineering.blueprint('kubejs:musket_stock',
+  [
+    Item.of('immersiveengineering:hammer'),
+    '2x tfc:metal/sheet/black_steel',
+    '2x tfc:metal/sheet/black_steel',
+    '#minecraft:logs'
+  ],  
+  "Musket Parts"
+),
+event.recipes.immersiveengineering.blueprint('kubejs:musket_ramrod',
+  [
+    Item.of('immersiveengineering:hammer'),
+    '2x tfc:metal/rod/black_steel',
+    'tfc_items:black_steel_screw'
+  ],
+  "Musket Parts"
 )
 })
+
 ServerEvents.tags('item', event => {
 event.add('tfc:blast_furnace_fuel', 'immersiveengineering:coal_coke')
 	
@@ -337,9 +432,9 @@ event.add('tfc:blast_furnace_fuel', 'immersiveengineering:coal_coke')
 })
 ServerEvents.recipes(event => {
   event.recipes.custommachinery.custom_machine("custommachinery:gunbench", 100)
-    .requireItem('immersiveengineering:wooden_grip', "stock")
-    .requireItem(Item.of('minecraft:flint_and_steel'), "mechanics")
-    .requireItem(Item.of('tfc:metal/tuyere/steel'), "barrel")
+    .requireItem('kubejs:flintlock_stock', "stock")
+    .requireItem('kubejs:flintlock_mech', "mechanics")
+    .requireItem('kubejs:flintlock_barrel', "barrel")
     .produceItem(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"qkl:fk15p",HasBulletInBarrel:1b}'), "output")
     
   event.recipes.custommachinery.custom_machine("custommachinery:gunbench", 100)
@@ -355,10 +450,9 @@ ServerEvents.recipes(event => {
   .produceItem(Item.of('tacz:attachment', '{AttachmentId:"qkl:bayonet_fkc1"}'), "output")
 
   event.recipes.custommachinery.custom_machine("custommachinery:gunbench", 100)
-  .requireItem('tfc_items:brass_stamen', "misc1")
-  .requireItemTag('#minecraft:logs', 1, "misc2")
-  .requireItem('immersiveengineering:wooden_grip', "stock")
-  .requireItem(Item.of('minecraft:flint_and_steel'), "mechanics")
-  .requireItem(Item.of('tfc:metal/tuyere/blue_steel'), "barrel")
+  .requireItem('kubejs:musket_ramrod', "misc1")
+  .requireItem('kubejs:musket_stock', "stock")
+  .requireItem('kubejs:musket_mech', "mechanics")
+  .requireItem('kubejs:musket_barrel', "barrel")
   .produceItem(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"qkl:fk15",HasBulletInBarrel:1b}'), "output")
 })
